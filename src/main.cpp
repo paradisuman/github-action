@@ -3,6 +3,7 @@
 using namespace std;
 
 int main (){
+    cout<<"TEST"<<endl;
     tb_char_t path[1024];
     tb_directory_current(path, 1024);
     cout<<"[DEBUG]:"<<path<<endl;
