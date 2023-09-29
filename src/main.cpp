@@ -15,7 +15,7 @@ int main (){
     cout<<"[DEBUG]:"<<path1<<endl;
 
     // 设置为/private/tmp/xxx
-    tb_directory_current_set("/private/tmp/.lolly/chdir");
+    tb_directory_current_set("/tmp/.lolly/chdir");
     tb_directory_current(path2, 1024);
     cout<<"[DEBUG]:"<<path2<<endl;
 
