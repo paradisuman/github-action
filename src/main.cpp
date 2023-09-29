@@ -6,7 +6,7 @@ using namespace std;
 
 int main (){
     cout<<"TEST"<<endl;
-    tb_char_t path1[1024]= "/private/tmp/.lolly/chdir";
+    tb_char_t path1[1024]= "/tmp/.lolly/chdir";
     tb_char_t  path2[1024];
 
     // 创建目录
