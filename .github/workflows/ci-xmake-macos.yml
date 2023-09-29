@@ -24,8 +24,20 @@ jobs:
         with:
           xmake-version: v2.8.2
 
+      - uses: xmake-io/github-action-setup-xmake@v1
+        with:
+          xmake-version: v2.8.2
+          actions-cache-folder: '.xmake-cache'
+
       - name: xmake repo --update
         run: xmake repo --update
+
+      - name: cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ${{ env.XMAKE_GLOBALDIR }}/.xmake/packages
+            ${{ runner.workspace }}/build/.build_cache
 
       - name: build
         run: xmake build --yes -vD
